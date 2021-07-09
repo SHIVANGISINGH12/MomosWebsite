@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuMu MoMos</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <Section class="sub-header">
+        <nav>
+            <a href="Home.html"><img src="images/mumulogo.png" ></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Home.html">HOME</a></li>
+                    <li><a href="Menu.html">MENU</a></li>
+                    <li><a href="AboutUs.html">ABOUT US</a></li>
+                    <li><a href="ContactUs.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+       <h1>Sign Up</h1>
+
+    </Section>
+
+<!------- JavaScript for Toggle menu -------->
+    <script>
+        var navLinks =document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+
+    <!-- -----------SIGN UP-------- -->
+<section>
+    <div class="SignUP-col">
+        <form action="">
+            <input type="text" placeholder="Enter your name" required>
+            <input type="email" placeholder="Enter email-address" required>
+            <input type="password" placeholder="Enter password" required>
+            <input type="number" placeholder="Enter phone number" required>
+            <input type="address"  placeholder="Enter address" required>
+            <button type="submit" class="hero-btn red-btn">Sign Up</button>
+        </form>
+    </div>
+</section>
+
+
+
+
+<!-- --------Footer------ -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aliquid labore, molestiae minus mollitia <br> soluta amet dolore reiciendis facilis sequi alias provident tenetur?</p>
+     <div class="icons">
+        <i class="fa fa-facebook" ></i>
+        <i class="fa fa-twitter" ></i>
+        <i class="fa fa-instagram" ></i>
+        <i class="fa fa-linkedin" ></i>
+     </div>
+    
+</section>
+    
+</body>
+</html>
